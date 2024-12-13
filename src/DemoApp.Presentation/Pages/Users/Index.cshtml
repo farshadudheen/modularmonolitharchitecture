@@ -1,0 +1,33 @@
+﻿@page
+@model DemoApp.Presentation.Pages.Users.IndexModel
+@{
+    ViewData["Title"] = "Users";
+}
+<h1>Manage Users</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form method="post">
+    <h2>Add User</h2>
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <button type="submit">Add User</button>
+</form>

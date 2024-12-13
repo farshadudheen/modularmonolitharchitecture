@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/site.css" rel="stylesheet" />
+    <title>@ViewData["Title"] - MyApp</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <header>
+        @await Html.PartialAsync("_NavBar")
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year MyApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
