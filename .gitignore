@@ -13,3 +13,4 @@
 /src/DemoApp.Presentation/wwwroot/lib
 /src/DemoApp.SharedKernel/bin/Debug/net8.0
 /src/DemoApp.SharedKernel/obj
+/.vs/Architecture-Demo
